@@ -70,10 +70,10 @@ responseList will return true if successfuly created and false if an error occur
 </table>
 
 ## Options param
-{
+<pre>{
   listItemCss: "background-color: black; color: white", // will override default css for each item in the list
   popUpLeft: true, // the popups will show to the right by default, pass true here to make the show on the left (default false)
   showResponse: false, //will stop the popup tab from shoing to the right of the response list (default true)
-}
+}</pre>
 
 
