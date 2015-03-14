@@ -3,7 +3,7 @@ If you need a simple list of API responses where you can refresh each individual
 
 #How To
 Pass in json array into responseList(json) function
-<code>[
+<pre>[
   {
     name: "name of thing 1",
     url: "http://www.url.com"
@@ -13,7 +13,7 @@ Pass in json array into responseList(json) function
     url: "http://www.url2.com"
   },
   ...
-]</code>
+]</pre>
 
 and it will return the html for the list.
 ie html = responseList(json);
