@@ -1,9 +1,14 @@
 # apiResponseList
 If you need a simple list of API responses where you can refresh each individual response or all responses with a click, then this is what you are looking for.
 
+## Demo
+
+<a href="http://michaelrios.github.io/apiResponseList/">Click here to see the demo</a>
+
 ## How To
 Pass in json array into responseList(requestJson) function
-<pre>[
+<pre>
+[
   {
     name: "name of thing 1",
     url: "http://www.url.com",
@@ -21,7 +26,8 @@ Pass in json array into responseList(requestJson) function
     url: "http://www.url3.com"
   }
   ...
-]</pre>
+]
+</pre>
 
 and it will return the html for the list.
 ie html = responseList(requestJson);
@@ -70,10 +76,12 @@ responseList will return true if successfuly created and false if an error occur
 </table>
 
 ## Options param
-<pre>{
+<pre>
+{
   listItemCss: "background-color: black; color: white", // will override default css for each item in the list
   popUpLeft: true, // the popups will show to the right by default, pass true here to make the show on the left (default false)
-  showResponse: false, //will stop the popup tab from shoing to the right of the response list (default true)
-}</pre>
+  showResponse: false, //will stop the popup tab from showing to the right of the response list (default true)
+}
+</pre>
 
 
