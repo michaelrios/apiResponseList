@@ -8,8 +8,8 @@ Pass in json array into responseList(json) function
     name: "name of thing 1",
     url: "http://www.url.com",
     headers: {
-      "Host": "some host name",
-      "otherHeader": "some other header"
+      Host: "some host name",
+      otherHeader: "some other header"
     }
   },
   {
@@ -33,4 +33,34 @@ ie. responseList(json, domObject);
 where
 domObject = $('someDomLocation')
 responseList will return true if successfuly created and false if an error occurs
+
+#Options
+<table>
+  <tr>
+    <td><strong>optionName</strong></td>
+    <td><strong>isRequired</strong></td>
+    <td><strong>valueType</strong></td>
+    <td><strong>example</strong></td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td>yes</td>
+    <td>string</td>
+    <td>www.google.com</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>no (will default to url)</td>
+    <td>string</td>
+    <td>Google</td>
+  </tr>
+  <tr>
+    <td>headers</td>
+    <td>no</td>
+    <td>object (keys are header key, and value is header value)</td>
+    <td>{Host: "someHost"}</td>
+  </tr>
+</table>
+
+
 
