@@ -6,12 +6,19 @@ Pass in json array into responseList(json) function
 <pre>[
   {
     name: "name of thing 1",
-    url: "http://www.url.com"
+    url: "http://www.url.com",
+    headers: {
+      "Host": "some host name",
+      "otherHeader": "some other header"
+    }
   },
   {
     name: "name of thing 2",
     url: "http://www.url2.com"
   },
+  {
+    url: "http://www.url3.com"
+  }
   ...
 ]</pre>
 
