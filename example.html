@@ -3,8 +3,30 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="application/javascript" src="apiResponseList.js"></script>
 </head>
 <body>
-here
+
+<div id="listContainer"></div>
+
+<script>
+    var requestJson =
+    [
+        {
+            name: "GitHub",
+            url: "https://status.github.com/api/status.json",
+            pathToResponseData: {status: "status", timestamp: "last_updated"}
+        },
+        {
+            name: "GitHub",
+            url: "https://status.github.com/api/status.json",
+            pathToResponseData: {status: "status", timestamp: "last_updated"}
+        }
+    ];
+    var options = {};
+    responseList(requestJson, $('#listContainer'), options);
+</script>
 </body>
 </html>
